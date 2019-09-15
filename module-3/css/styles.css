@@ -1,0 +1,165 @@
+html{
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Playfair Display', 'Arial', serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wrapper{
+  width: 900px;
+  margin: 0 auto;
+}
+/* site navigation */
+.site-navigation{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.site-navigation li{
+  display: inline-block;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 98px;
+}
+
+.lifestyle{
+  padding: 0 58px 0 166px;
+}
+
+.photodiary{
+  padding: 0 48px 0 58px;
+}
+
+.music{
+  padding: 0 48px 0 48px;
+}
+
+.travel{
+  padding: 0 144px 0 44px;
+}
+
+.site-navigation a{
+  text-transform: uppercase;
+  text-decoration: none;
+  /* line-height: 24px; */
+  color: #626262;
+
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #03a9f4;
+}
+
+/* section */
+.main-section{
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+.section-item{
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;  
+  margin-bottom: 134px;
+}
+
+.section-item:nth-last-child(-n+3){
+  margin-bottom: 52px;
+}
+
+.section-item:not(:nth-child(2n)){
+  margin-right:0;
+}
+.section-image{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  width: 420px;
+  height: 280px;
+}
+
+.article-category{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  color: #b4ad9e;
+  line-height: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.article-title{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.article-about{
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.load-btn{
+  display: inline-block;
+  border: none;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  background-color: #fff;
+  border: 2px solid #626262;
+  text-align: center;
+  padding: 19px 34px 16px 34px;
+  margin-left: 360px;
+  
+  margin-bottom: 70px;
+  text-decoration: none;
+  
+    /* background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; */
+  
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="ckeckbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
