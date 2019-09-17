@@ -19,36 +19,32 @@ body {
   width: 900px;
   margin: 0 auto;
 }
+
 /* site navigation */
 .site-navigation{
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
+  text-align: center;
+}
 
+header{
+  margin-top: 72px;
+  margin-bottom: 98px;
 }
 
 .site-navigation li{
   display: inline-block;
   text-align: center;
-  margin-top: 72px;
-  margin-bottom: 98px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.lifestyle{
-  padding: 0 58px 0 166px;
-}
 
-.photodiary{
-  padding: 0 48px 0 58px;
-}
-
-.music{
-  padding: 0 48px 0 48px;
-}
-
-.travel{
-  padding: 0 144px 0 44px;
-}
+.site-navigation li:not(:last-child){
+  margin-right: 60px;
+  }
 
 .site-navigation a{
   text-transform: uppercase;
@@ -120,7 +116,7 @@ body {
 }
 
 .load-btn{
-  display: inline-block;
+  display: block;
   border: none;
   font-size: 20px;
   line-height: 24px;
@@ -129,20 +125,20 @@ body {
   border: 2px solid #626262;
   text-align: center;
   padding: 19px 34px 16px 34px;
-  margin-left: 360px;
-  
-  margin-bottom: 70px;
+  margin: 0 auto;
   text-decoration: none;
   
-    /* background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px; */
-  
+}
+
+.load-btn:hover,
+.load-btn:focus{
+  color: #03a9f4;
+  border-color: #03a9f4;
+  cursor: pointer;
+}
+
+.button{
+  padding-bottom: 70px;
 }
 
 
