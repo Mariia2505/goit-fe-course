@@ -204,12 +204,10 @@ a:visited{
   font-size: 48px;
   line-height: 32px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+
   text-transform: uppercase;
   color: #555252;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .section-title::after{
@@ -269,12 +267,13 @@ a:visited{
   width: 54px;
   background-color: #323232;
   opacity: 0.5;
+  margin: 0;
 }
 
 .item-hover{
   display: none;
   position: absolute;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.5;
   width: 235px;
   height: 260px;
@@ -283,7 +282,7 @@ a:visited{
   right: 0;
   left: 0;
   margin: auto;
- 
+  opacity: 1;
 }
 
 .collection-item:hover .item-hover{
@@ -310,6 +309,9 @@ a:visited{
   background-color: transparent;
   margin-right: 0px;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position:center;
+
 }
 
 .item-button:nth-child(-n+2){
@@ -318,7 +320,33 @@ a:visited{
 
 .item-button:nth-child(4) {
   width: 166px;
+  background-position: 12px 10px ;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+  padding-right: 15px;
 } 
+
+.icon-heart-empty{
+  background-image: url(/img/heart.png);
+}
+
+.icon-shuffle{
+  background-image: url(/img/shuffle.png);
+}
+
+.icon-clock{
+  background-image: url(/img/clock.png);
+}
+
+.icon-basket{
+  background-image: url(/img/cart.png);
+}
+
 
 .item-button:hover{
   border-color: #1abc9c;
@@ -338,11 +366,6 @@ a:visited{
   background-color: #1abc9c;
 }
 
-.icon-heart-empty{
-  width: 50px;
-  height: 50px;
-  z-index: 5;
-}
 
 
 footer{
@@ -358,13 +381,14 @@ footer{
   text-transform: capitalize;
 }
 
-footer p{
+footer div{
 
   text-align: center;
 }
 
-footer address{
-  display: inline;
-  color: #1abc9c;
+footer .container a{
+  display: inline-block;
   font-style: normal;
+  text-decoration: none;
+  color: #1abc9c;
 }
