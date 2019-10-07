@@ -1,0 +1,297 @@
+@font-face{
+  font-family: 'Dancig script';
+  src: url('../fonts/dancing-script-v11-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Noto Sans';
+  src: url('../fonts/noto-sans-v9-latin-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Roboto Slab';
+  src: url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+img{
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 94px;
+}
+
+.logo a{
+  font-family: 'Dancig script', serif;
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+  text-decoration: none;
+}
+
+.site-nav{
+  display: flex;
+  text-transform: uppercase;
+  line-height: 41px;
+
+}
+
+.nav-link{
+  text-decoration: none;
+  padding: 0 20px;
+  color: #222;
+  transition: color 0.2s linear;
+}
+
+.nav-item:last-child a{
+  padding-right: 0;
+}
+
+.nav-link:hover{
+  color: #fed136;
+}
+
+/* SERVICES SECTION */
+
+.section-title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-description{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', serif;
+  color: #777;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding-bottom: 146px;
+}
+
+.services-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item{
+  width: 290px;
+  position: relative;
+}
+
+.section-title,
+.services-list,
+.service-title,
+.servise-description{
+  margin: 0;
+  padding: 0;
+}
+
+.services-section{
+  padding-bottom: 118px;
+}
+
+.service-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 75px;
+  color: #222;
+  text-align: center;
+}
+
+.service-title::before{
+  content: '';
+  position: absolute;
+  background-image: url('../img/Circle.png');
+  width: 74px;
+  height: 73px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: -70px;
+}
+
+.service-title.basket::after{
+  content: '';
+  position: absolute;
+  background-image: url('../img/Icon-Basket.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 74px;
+  height: 73px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: -70px;
+}
+
+.service-title.laptop::after{
+  content: '';
+  position: absolute;
+  background-image: url('../img/Icon-Laptop.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 74px;
+  height: 73px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: -70px;
+}
+
+.service-title.lock::after{
+  content: '';
+  position: absolute;
+  background-image: url('../img/Icon-Locked.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 74px;
+  height: 73px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: -72px;
+}
+
+.servise-description {
+  font-family: 'Roboto Slab', serif;
+  color: #777;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #222;
+  padding-top: 86px;
+  padding-bottom: 115px;
+  background-image: url(../img/Map-Image.png);
+  background-repeat: no-repeat;
+  background-position: bottom 18px right 0; 
+  /* не уверена, что правильно спозиционировала фон */
+}
+
+footer .section-title{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer .section-description{
+  padding-bottom: 74px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 212px;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 24px;
+  
+}
+
+::-webkit-input-placeholder{
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  border: 1px solid #ccc;
+  width: 458px;
+  border-radius: 2px;
+  padding-left: 22px;
+
+}
+
+input[type=text],
+input[type=email]{
+  height: 52px;
+  
+}
+
+textarea{
+  resize: none;
+  padding-top: 18px;
+}
+
+.contacts-form button{
+  display: block;
+  margin: 0 auto;
+  background-color: #fed136;
+  width: 240px;
+  height: 64px;
+  border: 1px solid #fed136;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s linear; 
+}
+
+.contacts-form button:hover{
+  background-color: rgba(254, 209, 54, .85);
+}
