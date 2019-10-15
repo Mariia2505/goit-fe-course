@@ -1,0 +1,280 @@
+html{
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+header{
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 130px;
+  background-image: url(../img/background-mobile.png);
+  background-color: #1a1915;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-position-y: top;
+
+}
+
+.wrapper{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.links{
+  /* margin: 0 auto; */
+  margin-bottom: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up{
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-right: 64px;
+}
+
+.log-in{
+  margin-left: 46px;
+}
+
+.sign-up a, 
+.log-in {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  display: block;
+  
+}
+
+.sign-up:hover, 
+.sign-up:focus {
+  border-color: #333;
+}
+
+.sign-up a:hover, 
+.log-in:hover, 
+.sign-up a:focus, 
+.log-in:focus {
+  color: #333;
+}
+
+h1{
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 27px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.header-caption{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+.header-descr{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 14px;
+  letter-spacing: 0.08em;
+}
+
+.header-button{
+  padding: 0;
+  display: block;
+  width: 100%;
+  background-color: #ff4e50;
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+
+.header-button a{
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.header-button a:hover,
+.header-button a:focus {
+  color: #333;
+}
+
+
+/* MAIN SECTION */
+
+.main-section{
+  padding-top: 67px;
+  color: #333;
+  padding-bottom: 56px;
+}
+
+.section-title{
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.partners-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.partner{
+  margin-bottom: 25px;
+}
+
+.image-wrapper{
+  position: relative;
+  width: 121px;
+  margin: 0 auto;
+}
+
+.image-wrapper::after{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.image-wrapper::before{
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/icons/tv.png);
+  bottom: 12px;
+  right: 12px;
+  z-index: 1;
+}
+
+.image-wrapper.tv-icon::after{
+  background-color: #ff4e50;
+}
+
+.image-wrapper.glass-icon::after{
+  background-color: #ffa507;
+}
+.image-wrapper.cup-icon::after{
+  background-color: #1cd7ad;
+}
+.image-wrapper.telegram-icon::after{
+  background-color: #4e73db;
+}
+
+.image-wrapper.glass-icon::before{
+  background-image: url(../img/icons/glass.png);
+  background-repeat: no-repeat;
+  right: 10px;
+}
+
+.image-wrapper.cup-icon::before{
+  background-image: url(../img/icons/cup.png);
+  background-repeat: no-repeat;
+}
+
+.image-wrapper.telegram-icon::before{
+  background-image: url(../img/icons/telegram.png);
+  background-repeat: no-repeat;
+  bottom: 10px;
+}
+
+.partner img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.partner-name{
+  margin-bottom: 12px;
+}
+
+.partner-about{
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #666;
+}
+
+.main-button{
+  padding: 0;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 2px solid #ff4e50;
+}
+
+.main-button a{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff4e50;
+  font-family: serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.main-button:hover,
+.main-button:focus{
+  border-color: #333;
+}
+
+.main-button a:hover,
+.main-button a:focus{
+  color: #333;
+}
+
