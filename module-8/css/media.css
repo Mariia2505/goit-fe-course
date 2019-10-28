@@ -1,11 +1,11 @@
 @media screen and (min-width:748px){
   .wrapper{
-    width: 748px;
+    width: 728px;
     padding: 0 40px;
   }
 
   header{
-    width: 768px;
+    /* width: 768px; */
     background-image: url(../img/background-tablet.png);
     background-position: left; 
     /* не понимаю почему бекграунд смещен вправо */
@@ -81,13 +81,14 @@
 
 @media screen and (min-width:940px){
   .wrapper{
-    width: 940px;
+    width: 920px;
     padding: 0;
     margin: 0 auto;
+    
   }
 
   header{
-    width: 1440px;
+    /* width: 1440px; */
     background-image: url(../img/background-desktop.png); 
     /* не понимаю почему бекграунд смещен вправо */
 
@@ -95,13 +96,13 @@
   }
 
   .header-caption{
-    width: 500px;
+    /* width: 500px; */
     margin: 0 auto;
     letter-spacing: -0.02em;
   }
 
   main{
-    width: 1440px;
+    /* width: 1440px; */
   }
 
   .partners-list {
@@ -110,6 +111,7 @@
 
   .main-section{
     padding-bottom: 72px;
+    /* margin: 0 auto; */
   }
 
 }

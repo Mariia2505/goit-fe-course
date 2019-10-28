@@ -23,7 +23,7 @@ body{
 }
 
 header{
-  width: 320px;
+  /* width: 100%; */
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
@@ -31,6 +31,7 @@ header{
   padding-bottom: 130px;
   background-image: url(../img/background-mobile.png);
   background-color: #1a1915;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-position-y: top;
@@ -252,11 +253,7 @@ h1{
   background-color: transparent;
   border-radius: 100px;
   border: 2px solid #ff4e50;
-}
 
-.main-button a{
-  display: block;
-  text-decoration: none;
   cursor: pointer;
   color: #ff4e50;
   font-family: serif;
@@ -267,6 +264,12 @@ h1{
   padding-top: 14px;
   padding-bottom: 12px;
 }
+
+/* .main-button a{
+  display: block;
+  text-decoration: none;
+  
+} */
 
 .main-button:hover,
 .main-button:focus{
