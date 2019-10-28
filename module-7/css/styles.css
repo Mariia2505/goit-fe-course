@@ -214,9 +214,9 @@ header{
   text-align: center;
 }
 
-/* FOOTER */
+/* CONTACTS SECTION */
 
-footer{
+.contacts{
   background-color: #222;
   padding-top: 86px;
   padding-bottom: 115px;
@@ -226,12 +226,12 @@ footer{
   /* не уверена, что правильно спозиционировала фон */
 }
 
-footer .section-title{
+.contacts .section-title{
   color: #fff;
   text-transform: uppercase;
 }
 
-footer .section-description{
+.contacts .section-description{
   padding-bottom: 74px;
 }
 
@@ -294,4 +294,16 @@ textarea{
 
 .contacts-form button:hover{
   background-color: rgba(254, 209, 54, .85);
+}
+
+input[type=text]:valid,
+input[type=email]:valid,
+textarea:valid {
+  outline: 1px solid rgb(23, 219, 23);
+}
+
+input[type=text]:invalid,
+input[type=email]:invalid,
+textarea:invalid {
+  outline: 1px solid rgb(219, 52, 23);
 }
