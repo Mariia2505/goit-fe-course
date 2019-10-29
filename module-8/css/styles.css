@@ -31,7 +31,7 @@ header{
   padding-bottom: 130px;
   background-image: url(../img/background-mobile.png);
   background-color: #1a1915;
-  /* background-size: cover; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-position-y: top;
@@ -45,7 +45,7 @@ header{
 
 .links{
   /* margin: 0 auto; */
-  margin-bottom: 115px;
+  /* margin-bottom: 115px; */
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +64,7 @@ header{
   margin-left: 46px;
 }
 
-.sign-up a, 
+.sign-up , 
 .log-in {
   text-decoration: none;
   color: #fff;
@@ -75,15 +75,11 @@ header{
 }
 
 .sign-up:hover, 
-.sign-up:focus {
-  border-color: #333;
-}
-
-.sign-up a:hover, 
 .log-in:hover, 
-.sign-up a:focus, 
+.sign-up:focus, 
 .log-in:focus {
   color: #333;
+  border-color: #333;
 }
 
 h1{
@@ -116,17 +112,13 @@ h1{
 }
 
 .header-button{
+  cursor: pointer;
   padding: 0;
   display: block;
   width: 100%;
   background-color: #ff4e50;
   border-radius: 100px;
   border: 2px solid transparent;
-}
-
-.header-button a{
-  display: block;
-  cursor: pointer;
   text-decoration: none;
   color: #fff;
   padding-top: 14px;
@@ -137,11 +129,10 @@ h1{
   font-weight: 700;
 }
 
-.header-button a:hover,
-.header-button a:focus {
+.header-button:hover,
+.header-button:focus {
   color: #333;
 }
-
 
 /* MAIN SECTION */
 
@@ -193,7 +184,6 @@ h1{
   content: '';
   width: 17px;
   height: 17px;
-  background-image: url(../img/icons/tv.png);
   bottom: 12px;
   right: 12px;
   z-index: 1;
@@ -201,34 +191,32 @@ h1{
 
 .image-wrapper.tv-icon::after{
   background-color: #ff4e50;
+  background-image: url(../img/icons/tv.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-wrapper.glass-icon::after{
   background-color: #ffa507;
+  background-image: url(../img/icons/glass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 .image-wrapper.cup-icon::after{
+  background-image: url(../img/icons/cup.png);
+  background-repeat: no-repeat;
   background-color: #1cd7ad;
+  background-position: center;
 }
 .image-wrapper.telegram-icon::after{
   background-color: #4e73db;
-}
-
-.image-wrapper.glass-icon::before{
-  background-image: url(../img/icons/glass.png);
-  background-repeat: no-repeat;
-  right: 10px;
-}
-
-.image-wrapper.cup-icon::before{
-  background-image: url(../img/icons/cup.png);
-  background-repeat: no-repeat;
-}
-
-.image-wrapper.telegram-icon::before{
   background-image: url(../img/icons/telegram.png);
   background-repeat: no-repeat;
-  bottom: 10px;
+  background-position: center;
+
 }
+
 
 .partner img{
   display: block;
@@ -274,10 +262,7 @@ h1{
 .main-button:hover,
 .main-button:focus{
   border-color: #333;
-}
-
-.main-button a:hover,
-.main-button a:focus{
   color: #333;
 }
+
 
