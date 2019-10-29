@@ -80,6 +80,9 @@ header{
 }
 
 .site-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   text-transform: uppercase;
   line-height: 41px;
@@ -87,6 +90,7 @@ header{
 }
 
 .nav-link{
+  display: block;
   text-decoration: none;
   padding: 0 20px;
   color: #222;
@@ -120,7 +124,7 @@ header{
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  padding-bottom: 146px;
+  /* margin-bottom: 146px; */
 }
 
 .services-list{
@@ -152,6 +156,7 @@ header{
   line-height: 75px;
   color: #222;
   text-align: center;
+  padding-top: 146px;
 }
 
 .service-title::before{
@@ -163,50 +168,29 @@ header{
   right: 0;
   left: 0;
   margin: auto;
-  top: -70px;
+  top: 78px;
+  z-index: -1;
+  
 }
 
-.service-title.basket::after{
-  content: '';
-  position: absolute;
-  background-image: url('../img/Icon-Basket.png');
+.service-title.basket{
+  background-image: url(../img/Icon-Basket.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 74px;
-  height: 73px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  top: -70px;
 }
 
-.service-title.laptop::after{
-  content: '';
-  position: absolute;
-  background-image: url('../img/Icon-Laptop.png');
+.service-title.laptop {
+  background-image: url(../img/Icon-Laptop.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 74px;
-  height: 73px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  top: -70px;
 }
 
-.service-title.lock::after{
-  content: '';
-  position: absolute;
-  background-image: url('../img/Icon-Locked.png');
+.service-title.lock {
+  background-image: url(../img/Icon-Locked.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 74px;
-  height: 73px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  top: -72px;
 }
+
 
 .servise-description {
   font-family: 'Roboto Slab', serif;
