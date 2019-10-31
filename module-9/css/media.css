@@ -1,0 +1,147 @@
+/* @media (min-width: 576px) {
+  .container {
+    min-width: 540px;
+  }
+} */
+
+/* @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} */
+
+
+
+
+
+@media screen and (min-width:747px){
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .container{
+    min-width: 728px;
+    padding: 0 40px;
+  }
+
+  header{
+    /* width: 768px; */
+    background-image: url(../img/background-tablet.png);
+    background-position: left; 
+    padding-top: 38px;
+  }
+
+  /* .header-flex-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  h1{
+    order: 1;
+  }
+
+  .links{
+    order: 2;
+    margin-bottom: 136px;
+  }
+
+  .log-in{
+    margin-left: 0px;
+  }
+
+  .sign-up{
+    margin-right: 0px;
+  }
+
+  .header-caption{
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: 0.05em;
+    margin-bottom: 22px;
+  }
+
+  .header-descr{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: normal;
+    margin-bottom: 34px;
+  }
+
+  .header-button{
+    width: 226px;
+    margin: 0 auto;
+  }
+
+  /* MAIN SECTION */
+
+  .main-section{
+    padding-top: 75px;
+    padding-bottom: 40px;
+  }
+
+  .section-title{
+    margin-bottom: 30px;
+  }
+
+  .partners-list {
+    display: flex;
+    justify-content: space-between;
+    width: 492px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .partner{
+    width: 226px;
+  }
+
+  .main-button{
+    width: 192px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:960px){
+  .container{
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+    
+  }
+
+  header{
+    background-image: url(../img/background-desktop.png); 
+
+    padding-top: 38px;
+  }
+
+  .header-caption{
+    margin: 0 auto;
+    letter-spacing: -0.02em;
+  }
+
+  .main-section{
+    padding-top: 75px;
+    padding-bottom: 72px;
+  }
+
+  .partners-list {
+    width: 100%;
+  }
+
+  .main-section{
+    padding-bottom: 72px;
+    /* margin: 0 auto; */
+  }
+
+}
