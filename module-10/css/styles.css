@@ -329,9 +329,9 @@ main {
 
 .team__photo:hover {
   position: relative;
-  /* transform: translateX(-10px), translateY(10px); */
-  left: -10px;
-  top: -10px;
+  transform: translateX(-10px), translateY(-10px);
+  /* left: -10px;
+  top: -10px; */
   -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
           box-shadow: 10px 10px 0 0 #95e1d3;
   /* не знаю как сделать так чтобы картинка не дергалась при наведении на ее тень и как сделать плавный трансформ картинки*/
@@ -376,7 +376,8 @@ main {
 }
 
 .socials__link{
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 56px;
   height: 56px;
   cursor: pointer;
