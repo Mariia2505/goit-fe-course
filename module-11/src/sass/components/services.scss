@@ -1,0 +1,34 @@
+.services{
+  @extend %list;
+  flex-wrap: wrap;
+
+  &__item{
+    width: 400px;
+    padding-left: 92px;
+    padding-bottom: 90px;
+    position: relative;
+  }
+
+  &__icon {
+    fill: $services-icon-color;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 35px;
+  }
+
+  &__item-title{
+    text-transform: uppercase;
+    text-align-last: left;
+    margin-bottom: 14px;
+  }
+
+  &__item-text{
+    text-align: left;
+    font-size: 15px;
+    font-family: $secondary-font-stack;
+    font-weight: normal;
+    color: $primary-grey-color;
+  }
+  
+}

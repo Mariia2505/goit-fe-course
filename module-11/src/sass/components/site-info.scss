@@ -1,0 +1,5 @@
+.site-info__link {
+  @extend %link;
+  color: $secondary-accent-color;
+  display: inline-block;
+}

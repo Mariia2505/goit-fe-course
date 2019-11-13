@@ -1,0 +1,43 @@
+.socials {
+  @extend %list;
+  width: 228px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 208px;
+  left: 78px;
+  transition: opacity 0.2s linear;
+
+  &__item{
+    background-color: $primary-accent-color;
+    z-index: 1;
+    transition: all 0.2s linear;
+
+    &:hover,
+    &:focus,
+    &:hover svg,
+    &:focus svg {
+      background-color: $secondary-accent-color;
+      fill: $primary-white-color;
+    }
+  }
+  
+  &__link{
+    display: flex;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+  }
+  
+  &__icon{
+    fill: $secondary-accent-color;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 3px;
+  }
+}
+

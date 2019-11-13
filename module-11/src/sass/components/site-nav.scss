@@ -1,0 +1,52 @@
+.site-nav{
+  &__item{
+    
+    display: block;
+  
+    &:last-child{
+      .site-nav__link{
+        padding-right: 0;
+      }
+    }
+  }
+  
+  &__link {
+    @extend %link;
+    padding: 12px 30px; 
+  
+    &--hover {
+      border-bottom: 3px solid transparent;
+    }
+  }
+  
+  &__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: $primary-white-color;
+  
+    &--shopping-cart {
+      width: 20px;
+      height: 18px;
+    }
+  
+    &--magnifying-glass{
+      width: 20px;
+      height: 18px;
+    }
+  }
+
+  @extend %list;
+}
+
+.site-logo__link--hover:hover,
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link:hover .site-nav__icon,
+.site-nav__link:focus .site-nav__icon
+
+{
+  color: $primary-accent-color;
+  fill: $primary-accent-color;
+  border-color: $primary-accent-color;
+}

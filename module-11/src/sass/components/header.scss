@@ -1,0 +1,10 @@
+.header {
+  background: url(../img/header-background.jpg) no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+  color: $primary-white-color;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url(../img/header-background@2x.jpg) no-repeat;
+  }
+}
